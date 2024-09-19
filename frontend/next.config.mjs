@@ -1,17 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    images: {
-      domains: ['placeholder.com'], // Add any external image domains you're using
-    },
+    transpilePackages: ['lucide-react'],
     webpack(config) {
       config.module.rules.push({
         test: /\.svg$/,
-        use: ["@svgr/webpack"]
+        use: ['@svgr/webpack'],
       });
-  
       return config;
-    }
+    },
   };
   
   export default nextConfig;
