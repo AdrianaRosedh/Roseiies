@@ -1,15 +1,106 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
-import { motion, AnimatePresence, useScroll, useTransform, useSpring, useAnimate, stagger } from 'framer-motion'
+import React, { useState, useEffect, useRef } from 'react'
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
-import { ChevronRight, X, Check } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import Image from 'next/image'
+import Link from 'next/link'
 
-// ... (previous code remains unchanged)
+const navItems = ["About", "Features", "Pricing", "Contact"]
+
+export default function LandingPage() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
+
+  useEffect(() => setMounted(true), [])
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  })
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-[#E15123] via-[#FAA87A] to-[#0FB9B1] text-white">
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-[#0FB9B1] origin-left z-50"
+        style={{ scaleX }}
+      />
+      <header className="fixed w-full z-40 bg-black/50 backdrop-blur-sm">
+        <div className="container mx-auto px-6 py-4">
+          <nav className="flex justify-between items-center">
+            <Link href="/">
+              <Image src="/logo.svg" alt="Roseiies Logo" width={150} height={40} />
+            </Link>
+            <div className="hidden md:flex space-x-6 items-center">
+              {navItems.map((item) => (
+                <Button key={item} variant="ghost" className="text-white hover:text-[#0FB9B1] transition-colors duration-300">
+                  {item}
+                </Button>
+              ))}
+              {mounted && (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                  className="text-white"
+                >
+                  {theme === "light" ? <MoonIcon /> : <SunIcon />}
+                </Button>
+              )}
+            </div>
+            <div className="md:hidden">
+              <Button variant="ghost" onClick={toggleMenu}>
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </Button>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm">
+          <div className="container mx-auto px-6 py-8">
+            <div className="flex justify-end">
+              <Button variant="ghost" onClick={toggleMenu}>
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </Button>
+            </div>
+            <nav className="mt-8">
+              {navItems.map((item) => (
+                <Button key={item} variant="ghost" className="w-full text-left text-2xl mb-4 text-white hover:text-[#0FB9B1] transition-colors duration-300">
+                  {item}
+                </Button>
+              ))}
+            </nav>
+          </div>
+        </div>
+      )}
+
+      <main className="container mx-auto px-6 pt-32 pb-12">
+        <HeroSection />
+        <FeaturesSection />
+        <HowItWorksSection />
+        <TestimonialsSection />
+        <CTASection />
+      </main>
+
+      <Footer />
+    </div>
+  )
+}
 
 function HeroSection() {
   const ref = useRef(null)
@@ -84,8 +175,6 @@ function FeaturesSection() {
     { title: 'Cutting-edge Formulations', description: 'Access innovative skincare solutions backed by the latest research.' }
   ]
 
-  const featureY = useTransform(scrollYProgress, [0, 1], [50, -50])
-
   return (
     <motion.section
       ref={ref}
@@ -105,18 +194,8 @@ function FeaturesSection() {
             viewport={{ once: true }}
             className="bg-white/10 backdrop-blur-lg rounded-lg p-6 hover:bg-white/20 transition-all duration-300"
           >
-            <motion.h3
-              className="text-xl font-semibold mb-4"
-              style={{ y: featureY }}
-            >
-              {feature.title}
-            </motion.h3>
-            <motion.p
-              className="text-white/75"
-              style={{ y: featureY }}
-            >
-              {feature.description}
-            </motion.p>
+            <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
+            <p className="text-white/75">{feature.description}</p>
           </motion.div>
         ))}
       </div>
@@ -137,8 +216,6 @@ function HowItWorksSection() {
     { title: "Recommend", description: "Receive personalized skincare recommendations" },
     { title: "Transform", description: "Experience visible improvements in your skin" }
   ]
-
-  const stepY = useTransform(scrollYProgress, [0, 1], [50, -50])
 
   return (
     <motion.section
@@ -167,18 +244,8 @@ function HowItWorksSection() {
               >
                 {index + 1}
               </motion.div>
-              <motion.h3
-                className="text-xl font-semibold mb-2"
-                style={{ y: stepY }}
-              >
-                {step.title}
-              </motion.h3>
-              <motion.p
-                className="text-white/75"
-                style={{ y: stepY }}
-              >
-                {step.description}
-              </motion.p>
+              <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+              <p className="text-white/75">{step.description}</p>
             </motion.div>
           ))}
         </div>
@@ -242,8 +309,14 @@ function CTASection() {
   )
 }
 
+type FooterSection = {
+  title: string;
+  content?: string;
+  links?: string[];
+};
+
 function Footer() {
-  const footerSections = [
+  const footerSections: FooterSection[] = [
     {
       title: "About Roseiies",
       content: "Revolutionizing skincare with AI-powered solutions for personalized beauty."
@@ -277,7 +350,7 @@ function Footer() {
               <h3 className="text-lg font-semibold mb-4">{section.title}</h3>
               {section.content ? (
                 <p className="text-sm opacity-75">{section.content}</p>
-              ) : (
+              ) : section.links ? (
                 <ul className="space-y-2">
                   {section.links.map((link) => (
                     <li key={link}>
@@ -287,7 +360,7 @@ function Footer() {
                     </li>
                   ))}
                 </ul>
-              )}
+              ) : null}
             </motion.div>
           ))}
         </div>
