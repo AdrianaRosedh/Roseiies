@@ -1,0 +1,69 @@
+{
+    "seo": {
+      "title": "Roseiies - KI-gestützte personalisierte Hautpflege",
+      "description": "Entdecken Sie Ihre perfekte Hautpflegeroutine mit Roseiies. Wir kombinieren modernste KI-Technologie mit Expertenrat von Dermatologen für wirklich personalisierte Hautpflegelösungen."
+    },
+    "hero": {
+      "title": "Entdecken Sie Ihre perfekte Hautpflegeroutine",
+      "subtitle": "Personalisierte KI-gestützte Empfehlungen, maßgeschneidert für Sie",
+      "cta": {
+        "primary": "Loslegen",
+        "secondary": "Mehr erfahren"
+      }
+    },
+    "features": {
+      "title": "Unsere Funktionen",
+      "subtitle": "KI-gestützte Hautpflegelösungen",
+      "description": "Erleben Sie die Zukunft der Hautpflege mit unseren hochmodernen Funktionen",
+      "ai": {
+        "title": "KI-Analyse",
+        "description": "Fortschrittliche KI-Algorithmen analysieren Ihren Hauttyp und Ihre Bedenken"
+      },
+      "experts": {
+        "title": "Expertenrat",
+        "description": "Empfehlungen unterstützt von Dermatologen und Hautpflegeexperten"
+      },
+      "trends": {
+        "title": "Neueste Trends",
+        "description": "Bleiben Sie auf dem Laufenden mit den neuesten Hautpflegetrends und Innovationen"
+      },
+      "shop": {
+        "title": "Personalisierter Shop",
+        "description": "Kuratierte Produktempfehlungen basierend auf Ihren einzigartigen Bedürfnissen"
+      }
+    },
+    "howItWorks": {
+      "title": "Wie es funktioniert",
+      "subtitle": "Ihre Reise zu perfekter Haut",
+      "description": "Entdecken Sie, wie unsere KI-gestützte Plattform Ihre personalisierte Hautpflegeroutine erstellt",
+      "analyze": {
+        "title": "Analysieren",
+        "description": "Laden Sie ein Selfie hoch und beantworten Sie einen kurzen Fragebogen zu Ihrer Haut"
+      },
+      "recommend": {
+        "title": "Empfehlen",
+        "description": "Unsere KI generiert eine personalisierte Hautpflegeroutine nur für Sie"
+      },
+      "apply": {
+        "title": "Anwenden",
+        "description": "Folgen Sie Ihrer maßgeschneiderten Routine mit empfohlenen Produkten"
+      },
+      "adapt": {
+        "title": "Anpassen",
+        "description": "Ihre Routine entwickelt sich weiter, während sich Ihre Haut im Laufe der Zeit verändert"
+      }
+    },
+    "testimonials": {
+      "title": "Was unsere Kunden sagen",
+      "subtitle": "Echte Erfahrungen von echten Menschen",
+      "sarah": "Roseiies hat meine Hautpflegeroutine komplett verändert. Die personalisierten Empfehlungen sind genau richtig!",
+      "michael": "Als Dermatologe bin ich von der Genauigkeit der KI-gestützten Analyse von Roseiies beeindruckt. Es ist ein Wendepunkt für die Hautpflege.",
+      "emma": "Ich habe mich noch nie so sicher mit meiner Haut gefühlt. Der personalisierte Ansatz von Roseiies funktioniert wirklich!"
+    },
+    "cta": {
+      "title": "Bereit, Ihre Hautpflegeroutine zu transformieren?",
+      "subtitle": "Beginnen Sie heute Ihre personalisierte Reise",
+      "primary": "Loslegen",
+      "secondary": "Mehr erfahren"
+    }
+  }

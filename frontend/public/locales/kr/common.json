@@ -1,0 +1,69 @@
+{
+    "seo": {
+      "title": "Roseiies - AI 기반 맞춤형 스킨케어",
+      "description": "Roseiies와 함께 완벽한 스킨케어 루틴을 발견하세요. 최첨단 AI 기술과 전문 피부과 의사의 조언을 결합하여 진정으로 개인화된 스킨케어 솔루션을 제공합니다."
+    },
+    "hero": {
+      "title": "당신의 완벽한 스킨케어 루틴을 발견하세요",
+      "subtitle": "당신만을 위한 맞춤형 AI 기반 추천",
+      "cta": {
+        "primary": "시작하기",
+        "secondary": "더 알아보기"
+      }
+    },
+    "features": {
+      "title": "우리의 기능",
+      "subtitle": "AI 기반 스킨케어 솔루션",
+      "description": "최첨단 기능으로 스킨케어의 미래를 경험하세요",
+      "ai": {
+        "title": "AI 분석",
+        "description": "고급 AI 알고리즘이 당신의 피부 타입과 고민을 분석합니다"
+      },
+      "experts": {
+        "title": "전문가 조언",
+        "description": "피부과 의사와 스킨케어 전문가의 지원을 받는 추천"
+      },
+      "trends": {
+        "title": "최신 트렌드",
+        "description": "최신 스킨케어 트렌드와 혁신을 따라가세요"
+      },
+      "shop": {
+        "title": "맞춤형 쇼핑",
+        "description": "당신의 고유한 요구에 기반한 큐레이션된 제품 추천"
+      }
+    },
+    "howItWorks": {
+      "title": "작동 방식",
+      "subtitle": "완벽한 피부를 향한 당신의 여정",
+      "description": "AI 기반 플랫폼이 어떻게 당신의 맞춤형 스킨케어 루틴을 만드는지 알아보세요",
+      "analyze": {
+        "title": "분석",
+        "description": "셀카를 업로드하고 피부에 대한 간단한 설문에 답하세요"
+      },
+      "recommend": {
+        "title": "추천",
+        "description": "우리의 AI가 당신만을 위한 맞춤형 스킨케어 루틴을 생성합니다"
+      },
+      "apply": {
+        "title": "적용",
+        "description": "추천된 제품으로 맞춤형 루틴을 따르세요"
+      },
+      "adapt": {
+        "title": "적응",
+        "description": "시간이 지남에 따라 당신의 피부 변화에 맞춰 루틴이 진화합니다"
+      }
+    },
+    "testimonials": {
+      "title": "고객들의 이야기",
+      "subtitle": "실제 사람들의 진짜 경험",
+      "sarah": "Roseiies는 제 스킨케어 루틴을 완전히 바꿔놓았어요. 맞춤형 추천이 정말 딱 맞아요!",
+      "michael": "피부과 의사로서, Roseiies의 AI 기반 분석의 정확도에 감명받았습니다. 스킨케어의 게임 체인저예요.",
+      "emma": "제 피부에 대해 이렇게 자신감을 느껴본 적이 없어요. Roseiies의 맞춤형 접근 방식이 정말 효과가 있어요!"
+    },
+    "cta": {
+      "title": "스킨케어 루틴을 변화시킬 준비가 되셨나요?",
+      "subtitle": "오늘 당신만의 맞춤형 여정을 시작하세요",
+      "primary": "시작하기",
+      "secondary": "더 알아보기"
+    }
+  }

@@ -1,0 +1,69 @@
+{
+    "seo": {
+      "title": "Roseiies - Soins de la peau personnalisés par IA",
+      "description": "Découvrez votre routine de soins parfaite avec Roseiies. Nous combinons une technologie IA de pointe avec les conseils d'experts dermatologues pour des solutions de soins vraiment personnalisées."
+    },
+    "hero": {
+      "title": "Découvrez votre routine de soins parfaite",
+      "subtitle": "Recommandations personnalisées par IA, adaptées spécialement pour vous",
+      "cta": {
+        "primary": "Commencer",
+        "secondary": "En savoir plus"
+      }
+    },
+    "features": {
+      "title": "Nos fonctionnalités",
+      "subtitle": "Solutions de soins de la peau alimentées par l'IA",
+      "description": "Découvrez l'avenir des soins de la peau avec nos fonctionnalités de pointe",
+      "ai": {
+        "title": "Analyse IA",
+        "description": "Des algorithmes IA avancés analysent votre type de peau et vos préoccupations"
+      },
+      "experts": {
+        "title": "Conseils d'experts",
+        "description": "Recommandations soutenues par des dermatologues et des experts en soins de la peau"
+      },
+      "trends": {
+        "title": "Dernières tendances",
+        "description": "Restez à jour avec les dernières tendances et innovations en matière de soins de la peau"
+      },
+      "shop": {
+        "title": "Boutique personnalisée",
+        "description": "Recommandations de produits adaptées à vos besoins uniques"
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça marche",
+      "subtitle": "Votre voyage vers une peau parfaite",
+      "description": "Découvrez comment notre plateforme alimentée par l'IA crée votre routine de soins personnalisée",
+      "analyze": {
+        "title": "Analyser",
+        "description": "Téléchargez un selfie et répondez à un questionnaire rapide sur votre peau"
+      },
+      "recommend": {
+        "title": "Recommander",
+        "description": "Notre IA génère une routine de soins personnalisée juste pour vous"
+      },
+      "apply": {
+        "title": "Appliquer",
+        "description": "Suivez votre routine personnalisée avec les produits recommandés"
+      },
+      "adapt": {
+        "title": "Adapter",
+        "description": "Votre routine évolue au fil du temps avec les changements de votre peau"
+      }
+    },
+    "testimonials": {
+      "title": "Ce que disent nos clients",
+      "subtitle": "Des expériences réelles de vraies personnes",
+      "sarah": "Roseiies a complètement transformé ma routine de soins. Les recommandations personnalisées sont parfaites !",
+      "michael": "En tant que dermatologue, je suis impressionné par la précision de l'analyse alimentée par l'IA de Roseiies. C'est une révolution pour les soins de la peau.",
+      "emma": "Je ne me suis jamais sentie aussi confiante avec ma peau. L'approche personnalisée de Roseiies fonctionne vraiment !"
+    },
+    "cta": {
+      "title": "Prêt à transformer votre routine de soins ?",
+      "subtitle": "Commencez votre voyage personnalisé aujourd'hui",
+      "primary": "Commencer",
+      "secondary": "En savoir plus"
+    }
+  }

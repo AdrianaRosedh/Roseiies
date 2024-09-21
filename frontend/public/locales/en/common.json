@@ -1,0 +1,69 @@
+{
+  "seo": {
+    "title": "Roseiies - AI-Powered Personalized Skincare",
+    "description": "Discover your perfect skincare routine with Roseiies. We combine cutting-edge AI technology with expert dermatologist advice for truly personalized skincare solutions."
+  },
+  "hero": {
+    "title": "Discover Your Perfect Skincare Routine",
+    "subtitle": "Personalized AI-powered recommendations tailored just for you",
+    "cta": {
+      "primary": "Get Started",
+      "secondary": "Learn More"
+    }
+  },
+  "features": {
+    "title": "Our Features",
+    "subtitle": "AI-Powered Skincare Solutions",
+    "description": "Experience the future of skincare with our cutting-edge features",
+    "ai": {
+      "title": "AI Analysis",
+      "description": "Advanced AI algorithms analyze your skin type and concerns"
+    },
+    "experts": {
+      "title": "Expert Advice",
+      "description": "Recommendations backed by dermatologists and skincare experts"
+    },
+    "trends": {
+      "title": "Latest Trends",
+      "description": "Stay up-to-date with the latest skincare trends and innovations"
+    },
+    "shop": {
+      "title": "Personalized Shop",
+      "description": "Curated product recommendations based on your unique needs"
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Your Journey to Perfect Skin",
+    "description": "Discover how our AI-powered platform creates your personalized skincare routine",
+    "analyze": {
+      "title": "Analyze",
+      "description": "Upload a selfie and answer a quick questionnaire about your skin"
+    },
+    "recommend": {
+      "title": "Recommend",
+      "description": "Our AI generates a personalized skincare routine just for you"
+    },
+    "apply": {
+      "title": "Apply",
+      "description": "Follow your custom routine with recommended products"
+    },
+    "adapt": {
+      "title": "Adapt",
+      "description": "Your routine evolves as your skin changes over time"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "subtitle": "Real experiences from real people",
+    "sarah": "Roseiies has completely transformed my skincare routine. The personalized recommendations are spot-on!",
+    "michael": "As a dermatologist, I'm impressed by the accuracy of Roseiies' AI-powered analysis. It's a game-changer for skincare.",
+    "emma": "I've never felt more confident about my skin. Roseiies' personalized approach really works!"
+  },
+  "cta": {
+    "title": "Ready to transform your skincare routine?",
+    "subtitle": "Start your personalized journey today",
+    "primary": "Get Started",
+    "secondary": "Learn More"
+  }
+}
